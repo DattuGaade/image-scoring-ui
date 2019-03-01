@@ -1,0 +1,26 @@
+img {
+    margin: 5px 0px;
+    border: 1px solid black;
+    display: block;
+    width: 275px;
+    height: 180px;
+}
+
+:host /deep/ .ui-card-body {
+    padding: 1em;
+    max-height: 950px;
+    overflow-y: scroll;
+}
+
+:host /deep/ .ui-fileupload-content {
+    padding: 1em;
+    position: relative;
+    transition: border-color .3s;
+    max-height: 200px;
+    overflow-y: scroll;
+    display: none;
+}
+
+:host /deep/  .ui-fileupload-buttonbar {
+    border: 1px solid #c8c8c8 !important;
+}

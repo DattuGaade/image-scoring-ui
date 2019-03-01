@@ -1,18 +1,25 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NgModule } from "@angular/core";
+import { HttpClientModule } from "@angular/common/http";
 
+import { FileUploadModule } from "primeng/fileupload";
+import { CardModule } from "primeng/card";
+import { CarouselModule } from "primeng/carousel";
 
-import { AppComponent } from './app.component';
-
+import { AppComponent } from "./app.component";
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FileUploadModule,
+    CardModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
